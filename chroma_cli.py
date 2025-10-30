@@ -61,10 +61,10 @@ def view_all_documents(collection):
     
     print("\n--- Documents ---")
     for i, (doc_id, doc, metadata) in enumerate(zip(results['ids'], results['documents'], results['metadatas']), 1):
-        print(f"\n{i}. ID: {doc_id}")
-        print(f"   Document: {doc}")
+        print(f"\n{i}. ID: {doc_id} \n")
+        print(f"   Document: {doc} \n")
         if metadata:
-            print(f"   Metadata: {json.dumps(metadata, indent=2)}")
+            print(f"   Metadata: {json.dumps(metadata, indent=2)} \n")
         print("-" * 80)
 
 def view_all_ids(collection):
